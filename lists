@@ -1,0 +1,17 @@
+
+if __name__ == '__main__':
+    N = int(raw_input())
+    list = []
+    
+    for i in range(N):
+        
+        s = raw_input().split()
+        a = s[0]
+        b = s[1:]
+        if a != "print":
+            a+="("+",".join(b)+")"
+            eval("list."+a)
+        else:
+            print list
+        
+
