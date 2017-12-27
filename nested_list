@@ -1,0 +1,30 @@
+def takeSecond(elem):
+    return elem[1]
+
+n = int(raw_input())
+list = []
+for i in range(n):
+    l=[]   
+    name = raw_input()
+    score = float(raw_input())
+    l.insert(0,name)
+    l.insert(1,float(score))
+    list.append(l)
+list.sort(key=takeSecond)
+count = 1
+for a in range(len(list)-1):
+    if float(list[a][1])==float(list[a+1][1]):
+        count += 1
+    else:
+        break
+n=[]
+n.append(list[count][0])
+for x in range(count,len(list)-1):
+    if float(list[x][1])==float(list[x+1][1]):
+        n.append( list[x+1][0] )
+    else:
+        break
+n.sort()
+for m in n:
+    print m
+
