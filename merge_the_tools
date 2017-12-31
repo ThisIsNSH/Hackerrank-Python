@@ -1,0 +1,14 @@
+def merge_the_tools(string, k):
+    
+    a=[]
+    i=0
+    while i<=len(string)-k:
+        a.append(string[i:i+k])
+        i+=k
+    for t in a:
+        b=[]
+        for k in t:
+            if k not in b:
+                b.append(k)
+        print "".join(b)        
+    
