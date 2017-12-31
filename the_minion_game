@@ -1,0 +1,22 @@
+def minion_game(string):
+    s,b=0,0
+        
+    l=len(string)
+    index=0
+    for i in range(l):
+        if string[i] in ('a','e','i','o','u','A','E','I','O','U'):
+            b+=l-index
+            index+=1
+        else:
+            s+=l-index            
+            index+=1
+    
+    if b>s:
+        print "Kevin "+str(b)
+    elif b<s:
+        print "Stuart "+str(s)
+    else:
+        print "Draw"
+    
+            
+            

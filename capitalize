@@ -1,0 +1,28 @@
+def capitalize(string):
+    s=string.split()
+    a=[]
+    for i in s:
+        if i[0].isdigit()==False:
+            a.append(i.title())
+        else:
+            a.append(i)
+    
+    
+   
+
+
+    o="".join(a)
+    l=[]
+    m=0
+    for n in string:
+        if n!=' ':
+            l.append(o[m])
+            m+=1
+        elif n==' ':
+            l.append(' ')
+   
+            
+    return "".join(l)
+    
+
+
