@@ -1,0 +1,15 @@
+def avg(t):
+    sum=0
+    for x in t:
+        sum+=x
+    return float(sum/len(t))
+
+
+b,x=map(int,raw_input().strip().split(" "))
+a=[]
+for _ in range(x):
+    n=map(float,raw_input().strip().split(" "))
+    a+=([n])
+c=zip(*a)
+for i in c:
+    print "%.1f" % avg(i)
