@@ -1,0 +1,5 @@
+a=raw_input()
+m=set(map(int,raw_input().strip().split()))
+b=raw_input()
+n=set(map(int,raw_input().strip().split()))
+print len(m.symmetric_difference(n))
