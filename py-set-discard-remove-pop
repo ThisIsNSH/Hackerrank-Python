@@ -1,0 +1,15 @@
+n = input()
+s = set(map(int, raw_input().split())) 
+x = int(raw_input())
+for _ in range(x):
+    a=raw_input().strip().split()
+    
+    if len(a)!=1:
+        l="s."+a[0]+"("+a[1]+")"
+        eval(str(l))
+    else:
+        l="s."+a[0]+"()"
+        eval(str(l))
+print sum(s)
+    
+
