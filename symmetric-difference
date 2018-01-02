@@ -1,0 +1,8 @@
+m=int(raw_input())
+m1=set(map(int,raw_input().strip().split()))
+n=int(raw_input())
+n1=set(map(int,raw_input().strip().split()))
+a=list(m1.difference(n1))+list(n1.difference(m1))
+a.sort()
+for i in a:
+    print i
