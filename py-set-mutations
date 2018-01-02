@@ -1,0 +1,8 @@
+a=raw_input()
+l=set(map(int,raw_input().strip().split()))
+for _ in range((int(raw_input()))):
+    n=raw_input().strip().split()
+    m=map(str,raw_input().strip().split())
+        
+    eval(str("l."+n[0]+"("+"set(["+",".join(m)+"])"+")"))
+print sum(l)
