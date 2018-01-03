@@ -1,0 +1,5 @@
+a=set(raw_input().split())
+b=[]
+for _ in range(int(raw_input())):
+    b.append(set(raw_input().split()))
+print all(i.issubset(a) for i in b)    
