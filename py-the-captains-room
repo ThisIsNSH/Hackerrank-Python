@@ -1,0 +1,16 @@
+n=int(raw_input())
+a=map(int,raw_input().split())
+a.sort()
+b=set(a)
+i=0
+while i<len(a)-1:
+    if a[i]==a[i+1]:
+        b.discard(a[i])
+        i+=n
+    else:
+        i+=1
+
+print sum(b)
+
+
+
