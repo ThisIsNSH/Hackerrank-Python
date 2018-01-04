@@ -1,0 +1,5 @@
+import cmath
+s=complex(raw_input())
+print cmath.sqrt(s.real**2+s.imag**2).real
+print cmath.phase(complex(s.real,s.imag)) 
+
